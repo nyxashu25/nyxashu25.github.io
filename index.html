@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ashutosh Singh — WordPress & PHP Developer in Dubai</title>
-<meta name="description" content="Ashutosh Singh is a web developer in Dubai specializing in WordPress and PHP: custom themes and plugins, API integrations, performance, technical SEO and security. 20+ WordPress projects delivered.">
+<meta name="description" content="Ashutosh Singh, WordPress and PHP developer in Dubai. Custom themes and plugins, API integrations, performance, technical SEO and security.">
 <meta name="author" content="Ashutosh Singh">
 <meta name="theme-color" content="#0d1117">
 <link rel="canonical" href="https://nyxashu25.github.io/">
@@ -13,17 +13,41 @@
 <meta property="og:title" content="Ashutosh Singh — WordPress & PHP Developer in Dubai">
 <meta property="og:description" content="Custom WordPress themes and plugins, API integrations, performance, technical SEO and security. 20+ WordPress projects delivered.">
 <meta property="og:url" content="https://nyxashu25.github.io/">
-<meta name="twitter:card" content="summary">
+<meta property="og:site_name" content="Ashutosh Singh">
+<meta property="og:image" content="https://nyxashu25.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ashutosh Singh, Web Developer, WordPress and PHP specialist, Dubai">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ashutosh Singh — WordPress & PHP Developer in Dubai">
+<meta name="twitter:description" content="Custom WordPress themes and plugins, API integrations, performance, technical SEO and security.">
+<meta name="twitter:image" content="https://nyxashu25.github.io/assets/og.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Ashutosh Singh",
-  "jobTitle": "Web Developer",
-  "url": "https://nyxashu25.github.io/",
-  "address": { "@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE" },
-  "knowsAbout": ["WordPress", "PHP", "WooCommerce", "JavaScript", "REST APIs", "Technical SEO", "Web performance"],
-  "sameAs": ["https://github.com/nyxashu25", "https://linkedin.com/in/nyxashu"]
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://nyxashu25.github.io/#person",
+      "name": "Ashutosh Singh",
+      "jobTitle": "Web Developer",
+      "url": "https://nyxashu25.github.io/",
+      "image": "https://nyxashu25.github.io/assets/og.png",
+      "address": { "@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE" },
+      "worksFor": { "@type": "Organization", "name": "DigiGrowth" },
+      "knowsLanguage": "en",
+      "knowsAbout": ["WordPress", "PHP", "WooCommerce", "JavaScript", "Python", "REST APIs", "Technical SEO", "Web performance", "Web security"],
+      "sameAs": ["https://github.com/nyxashu25", "https://linkedin.com/in/nyxashu"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nyxashu25.github.io/#website",
+      "url": "https://nyxashu25.github.io/",
+      "name": "Ashutosh Singh",
+      "inLanguage": "en",
+      "author": { "@id": "https://nyxashu25.github.io/#person" }
+    }
+  ]
 }
 </script>
 <style>
@@ -152,6 +176,51 @@ footer { border-top: 1px solid var(--border); padding: 22px 0 36px; color: var(-
   .caret { animation: none; }
   .btn, .card { transition: none; }
 }
+
+/* ---- details added in the second pass ---------------------------------------------------------- */
+.sub { font: 600 13px var(--mono); color: var(--accent); margin: 44px 0 14px; }
+.sub::before { content: "## "; color: var(--muted); }
+.meta { font: 12px var(--mono); color: var(--muted); margin: 0 0 12px; }
+
+details.more { margin-top: 12px; border-top: 1px solid var(--border); padding-top: 8px; }
+details.more > summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 8px; font: 13px var(--mono); color: var(--accent); padding: 6px 0; }
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::before { content: "+"; display: inline-grid; place-items: center; width: 18px; height: 18px; border: 1px solid var(--border); border-radius: 5px; line-height: 1; }
+details.more[open] > summary::before { content: "\2212"; }
+details.more ul { margin: 8px 0 0; padding-left: 18px; color: var(--muted); font-size: 14.5px; }
+details.more li { margin: 7px 0; }
+details.more li b { color: var(--text); font-weight: 600; }
+
+.strengths { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.strengths li { font: 13px var(--mono); padding: 6px 14px; border: 1px solid var(--border); border-radius: 99px; background: var(--surface); }
+.strengths li::before { content: "\2713\00a0"; color: var(--green); }
+
+.facts { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); }
+.fact { border: 1px solid var(--border); background: var(--surface); border-radius: 12px; padding: 14px 16px; }
+.fact h3 { margin: 0 0 4px; font: 600 12px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.fact p { margin: 0; }
+
+.metrics { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); margin: 0 0 28px; }
+.metric { border: 1px solid var(--border); background: var(--surface); border-radius: 12px; padding: 16px; }
+.metric b { display: block; font: 700 24px var(--mono); color: var(--accent); line-height: 1.25; }
+.metric span { font-size: 13px; color: var(--muted); }
+
+.role { }
+.proj-role { font: 12px var(--mono); color: var(--green); margin: 0 0 8px; }
+.proj-card h3 { margin-bottom: 2px; }
+.proj-card p { margin-bottom: 8px; }
+
+.principle h3 { display: flex; align-items: center; gap: 10px; }
+.principle h3 i { font: 700 12px var(--mono); font-style: normal; color: #04121a; background: var(--accent); border-radius: 6px; padding: 2px 8px; }
+
+.contact .facts { margin: 28px auto 0; max-width: 760px; text-align: left; }
+.links-row { display: flex; flex-wrap: wrap; gap: 8px 18px; justify-content: center; margin-top: 18px; font: 13px var(--mono); }
+footer .wrap > div + div { margin-top: 6px; }
+.links-row a { display: inline-block; padding: 12px 4px; }
+footer .wrap > div a { display: inline-block; padding: 10px 2px; }
+footer a { color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
+footer a:hover { color: var(--accent); }
+@media print { details.more > *:not(summary) { display: block !important; } }
 </style>
 </head>
 <body>
@@ -166,6 +235,7 @@ footer { border-top: 1px solid var(--border); padding: 22px 0 36px; color: var(-
         <li><a href="#skills">skills</a></li>
         <li><a href="#experience">experience</a></li>
         <li><a href="#work">work</a></li>
+        <li><a href="#engineering">practices</a></li>
         <li><a href="#contact">contact</a></li>
       </ul>
     </nav>
@@ -189,6 +259,7 @@ footer { border-top: 1px solid var(--border); padding: 22px 0 36px; color: var(-
           <li><b>3.5 yrs</b><span>experience</span></li>
           <li><b>20+</b><span>WordPress projects</span></li>
           <li><b>4</b><span>industries served</span></li>
+          <li><b>7</b><span>open-source tools</span></li>
         </ul>
       </div>
       <div class="term" aria-hidden="true">
@@ -212,10 +283,37 @@ footer { border-top: 1px solid var(--border); padding: 22px 0 36px; color: var(-
       <p class="eyebrow">cat about.md</p>
       <h2>About</h2>
       <p class="lede">Web developer with 3.5 years of experience building and optimizing client-facing websites, specializing in WordPress and PHP. I own both the frontend and backend layers and focus on clean, scalable, high-converting digital solutions aligned with business goals.</p>
+      <p class="lede">Alongside client work I write and publish open-source tools, and I hold them to the same standard: tested logic, continuous integration, safe defaults and documentation that states what the tool does <em>not</em> do.</p>
+
+      <h3 class="sub">What I do</h3>
       <div class="grid g3">
-        <div class="card"><h3>WordPress engineering</h3><p>Custom themes and plugins, WooCommerce, REST and third-party API integrations.</p></div>
-        <div class="card"><h3>Performance and SEO</h3><p>Fast, search-friendly builds with technical SEO and analytics wired in from the start.</p></div>
-        <div class="card"><h3>Security-aware</h3><p>Website security fundamentals and secure coding, plus production troubleshooting to keep sites stable.</p></div>
+        <div class="card"><h3>Custom WordPress themes</h3><p>Themes built to your design and content structure, with clean templates and accessible, responsive markup.</p></div>
+        <div class="card"><h3>Custom plugins</h3><p>Features that do not belong in a theme: custom post types, forms, integrations and admin tools, written to WordPress coding conventions.</p></div>
+        <div class="card"><h3>WooCommerce</h3><p>Online stores built and customized on WooCommerce.</p></div>
+        <div class="card"><h3>API integrations</h3><p>REST and third-party API integrations, including custom endpoints.</p></div>
+        <div class="card"><h3>Performance</h3><p>Faster pages through lean markup and asset optimization, measured before and after the change.</p></div>
+        <div class="card"><h3>Technical SEO</h3><p>Titles, canonicals, sitemaps, redirects and crawlability, checked with tools I wrote myself: <a href="https://github.com/nyxashu25/seo-audit" rel="noopener">seo-audit</a> and <a href="https://github.com/nyxashu25/redirect-mapper" rel="noopener">redirect-mapper</a>.</p></div>
+        <div class="card"><h3>Security hardening</h3><p>Login protection, hidden version information, safer defaults and secure coding, as in my <a href="https://github.com/nyxashu25/wp-security-hardening" rel="noopener">WP Security Hardening</a> plugin.</p></div>
+        <div class="card"><h3>Maintenance and troubleshooting</h3><p>Production troubleshooting and ongoing upkeep to keep sites fast, stable and secure.</p></div>
+        <div class="card"><h3>Architecture decisions</h3><p>Owning the frontend and backend means I can weigh trade-offs end to end instead of handing problems across a boundary.</p></div>
+      </div>
+
+      <h3 class="sub">Strengths</h3>
+      <ul class="strengths">
+        <li>End-to-end ownership</li>
+        <li>Clean and scalable code</li>
+        <li>Performance optimization</li>
+        <li>Security-aware development</li>
+        <li>Systems thinking</li>
+        <li>Fast learner</li>
+      </ul>
+
+      <h3 class="sub">At a glance</h3>
+      <div class="facts">
+        <div class="fact"><h3>Based in</h3><p>Dubai, UAE (UTC+4)</p></div>
+        <div class="fact"><h3>Education</h3><p>Bachelor of Science, Computer Science (graduate)</p></div>
+        <div class="fact"><h3>Languages</h3><p>English</p></div>
+        <div class="fact"><h3>Industries</h3><p>Real estate, finance, healthcare, automotive</p></div>
       </div>
     </div>
   </section>
@@ -250,6 +348,7 @@ footer { border-top: 1px solid var(--border); padding: 22px 0 36px; color: var(-
             <li>Build scalable WordPress and custom PHP solutions following performance, SEO and security best practices.</li>
             <li>Work with marketing and strategy teams to turn business goals into high-converting experiences.</li>
             <li>Own architectural decisions and production troubleshooting to keep sites fast, stable and secure.</li>
+            <li><strong>Key projects:</strong> <a href="https://zfinity.in" rel="noopener">zfinity.in</a> (full-stack development), <a href="https://securentity.com" rel="noopener">securentity.com</a> (security-focused implementation), encrypted.training (end-to-end development) and avinfotechub.com (frontend and backend enhancements).</li>
           </ul>
         </div>
         <div class="job past">
@@ -268,83 +367,193 @@ footer { border-top: 1px solid var(--border); padding: 22px 0 36px; color: var(-
     <div class="wrap">
       <p class="eyebrow">ls ~/projects</p>
       <h2>Selected work</h2>
-      <p class="lede">Open-source projects I build on my own time.</p>
+      <p class="lede">Open-source projects I build on my own time. Every one has a README, tests and continuous integration. Open "details" on any card for how it is built.</p>
       <div class="grid g2">
         <article class="card">
           <span class="status">live</span>
           <h3>DataPit</h3>
+          <p class="meta">Node.js · React · PostgreSQL · Elasticsearch · Redis · 91 test files</p>
           <p>B2B sales intelligence platform: faceted people and company search, credit-gated email reveal with atomic accounting, outreach sequences, team billing and a Chrome extension for LinkedIn, Gmail and CRM pages.</p>
           <span class="tag">Node.js</span><span class="tag">React</span><span class="tag">PostgreSQL</span><span class="tag">Elasticsearch</span><span class="tag">Redis</span><span class="tag">BullMQ</span>
+          <details class="more">
+            <summary>details</summary>
+            <ul>
+              <li><b>Search and reveal.</b> Faceted people and company search on Elasticsearch, hydrated from PostgreSQL, with contact details masked until a credit is spent.</li>
+              <li><b>Credit accounting that survives concurrency.</b> An atomic reserve in Redis, a commit to an append-only PostgreSQL ledger, and a refund when nothing is found. A reaper and a reconciliation job watch for drift and alert instead of silently "correcting" money.</li>
+              <li><b>Sequences.</b> Email and wait steps run by a BullMQ worker, with bounce and unsubscribe webhooks feeding a suppression list.</li>
+              <li><b>Chrome extension.</b> Looks people up on LinkedIn, Sales Navigator, Gmail, Calendar, HubSpot and Salesforce.</li>
+              <li><b>Safety and operations.</b> JWT refresh rotation with replay detection, idempotency keys, Redis rate limits, AES-256-GCM encrypted Stripe keys, a GDPR/CCPA opt-out, an admin audit log, Prometheus metrics and OpenTelemetry.</li>
+              <li><b>Pipeline.</b> Secret scanning with gitleaks, dependency audit, lint, Prettier, tests against real PostgreSQL, Redis and Elasticsearch containers, and Trivy image scans.</li>
+              <li><b>Shape.</b> One Express monolith plus one worker process, deliberately not microservices. Stack: Node.js 20, Express, Prisma, BullMQ, React 18, Vite, Redux Toolkit, Tailwind, Docker Compose, nginx.</li>
+            </ul>
+          </details>
           <div class="links"><a href="https://datapit.io" rel="noopener">datapit.io ↗</a><a href="https://github.com/nyxashu25/signalbase" rel="noopener">source ↗</a></div>
         </article>
         <article class="card">
           <span class="status v">v1.4.0</span>
           <h3>ExpiredDomains Authority Sorter</h3>
+          <p class="meta">Chrome Manifest V3 · vanilla JavaScript · no dependencies</p>
           <p>Chrome extension that collects expired domains, looks up SEMrush Authority Score, ranks them and shortlists available names on Dynadot. It stops at the cart: checkout stays manual.</p>
           <span class="tag">Chrome MV3</span><span class="tag">JavaScript</span><span class="tag">Automation</span>
+          <details class="more">
+            <summary>details</summary>
+            <ul>
+              <li><b>Three stages.</b> Collect domains from ExpiredDomains.net (by scanning pages or importing a CSV), look up the SEMrush Authority Score, then check availability on Dynadot and cart the ones that qualify.</li>
+              <li><b>Resumable.</b> Stopping and restarting continues where it left off instead of repeating lookups.</li>
+              <li><b>Careful by design.</b> It never purchases. It paces requests with randomized delays and stops itself on a login wall, a captcha or a cart click that is never confirmed.</li>
+              <li><b>Local only.</b> Results live in <code>chrome.storage.local</code>. There is no backend and no telemetry.</li>
+            </ul>
+          </details>
           <div class="links"><a href="https://github.com/nyxashu25/auto-scrape-verify-buy" rel="noopener">source ↗</a></div>
         </article>
       </div>
 
-      <h2 style="margin-top:48px">WordPress plugins</h2>
-      <p class="lede">Open-source plugins in PHP with their own test suites and CI on PHP 7.4 to 8.4.</p>
+      <h3 class="sub">WordPress plugins</h3>
+      <p class="lede">Open-source plugins in PHP, each with its own test suite and CI on PHP 7.4, 8.1, 8.3 and 8.4.</p>
       <div class="grid g2">
         <article class="card">
           <h3>WP Security Hardening</h3>
+          <p class="meta">PHP 7.4+ · WordPress 5.8+ · 57 tests · MIT</p>
           <p>Security headers, login attempt limiting, username-discovery blocking and version hiding. Every option can be switched off, and the risky ones start off.</p>
-          <span class="tag">PHP</span><span class="tag">WordPress</span><span class="tag">57 tests</span>
+          <span class="tag">PHP</span><span class="tag">WordPress</span><span class="tag">Security</span>
+          <details class="more">
+            <summary>details</summary>
+            <ul>
+              <li><b>Nine independent options.</b> Options that can break integrations, such as XML-RPC blocking and HSTS, are off until you choose them.</li>
+              <li><b>A lockout that cannot be bypassed.</b> It runs after WordPress has checked the password, so a correct password is refused too while a visitor is locked out. Visitor IPs are stored only as hashes.</li>
+              <li><b>Settings cannot inject headers.</b> Header values are validated against fixed lists, so a bad or hostile setting never reaches the response.</li>
+              <li><b>Logic apart from WordPress.</b> Settings, header building and the lockout state machine are plain PHP classes, so the 57 tests cover them directly. The security rules were also mutation-checked: I broke them on purpose and confirmed the tests failed.</li>
+              <li><b>Honest scope.</b> The README says it is not a firewall or malware scanner and does not set a Content-Security-Policy.</li>
+            </ul>
+          </details>
           <div class="links"><a href="https://github.com/nyxashu25/wp-security-hardening" rel="noopener">source ↗</a></div>
         </article>
         <article class="card">
           <h3>WP Lead Form</h3>
+          <p class="meta">PHP 7.4+ · WordPress 5.8+ · 98 tests · MIT</p>
           <p>A contact form without a CAPTCHA: honeypot, signed time token and rate limiting. Leads are saved privately, emailed to you, and exportable as spreadsheet-safe CSV.</p>
-          <span class="tag">PHP</span><span class="tag">WordPress</span><span class="tag">98 tests</span>
+          <span class="tag">PHP</span><span class="tag">WordPress</span><span class="tag">REST API</span>
+          <details class="more">
+            <summary>details</summary>
+            <ul>
+              <li><b>Three quiet spam checks.</b> A hidden honeypot (bots are shown a fake success), a signed time token (too fast, forged or expired is refused) and a per-visitor limit that only counts messages that were actually saved, so a typo never locks anyone out.</li>
+              <li><b>Private by default.</b> Leads are a private post type visible to administrators only, never exposed on the front end or the REST API. IP addresses are not stored.</li>
+              <li><b>Works with and without JavaScript.</b> With it, the form validates per field over REST and fetches a fresh token so page caches cannot freeze the timer.</li>
+              <li><b>Hardened output.</b> The notification email sets the visitor as Reply-To only, strips line breaks from every header value, and the CSV export neutralizes spreadsheet formulas.</li>
+              <li><b>Tested at the edges.</b> 98 tests, including a failing database and a failing mail server, and the security rules were mutation-checked.</li>
+            </ul>
+          </details>
           <div class="links"><a href="https://github.com/nyxashu25/wp-lead-form" rel="noopener">source ↗</a></div>
         </article>
       </div>
 
-      <h2 style="margin-top:48px">Small tools</h2>
+      <h3 class="sub">Small tools</h3>
       <p class="lede">Focused utilities with their own tests and CI.</p>
       <div class="grid g3">
         <article class="card">
           <h3>Color Picker</h3>
+          <p class="meta">Chrome MV3 · 12 tests · no dependencies</p>
           <p>Chrome side-panel eyedropper. Copy HEX, RGB, HSL, HSV or CMYK, and check WCAG contrast.</p>
           <span class="tag">Chrome MV3</span><span class="tag">JavaScript</span>
+          <details class="more">
+            <summary>details</summary>
+            <ul>
+              <li><b>Side panel, not a popup,</b> so it stays open while you sample several colors in a row.</li>
+              <li><b>Contrast you can trust.</b> Ratios are truncated, never rounded, so 4.498:1 shows as 4.49:1 and correctly fails AA.</li>
+              <li><b>Minimal permissions.</b> Side panel, storage and clipboard only. No host access and no network requests.</li>
+            </ul>
+          </details>
           <div class="links"><a href="https://github.com/nyxashu25/color-picker-extension" rel="noopener">source ↗</a></div>
         </article>
         <article class="card">
           <h3>Quick Notepad</h3>
+          <p class="meta">Chrome MV3 · 18 tests · no dependencies</p>
           <p>Multi-note notepad in the toolbar with search, pinning, autosave, export and import.</p>
           <span class="tag">Chrome MV3</span><span class="tag">JavaScript</span>
+          <details class="more">
+            <summary>details</summary>
+            <ul>
+              <li><b>Never loses a keystroke.</b> Autosaves a quarter of a second after you stop typing, and again as the popup closes.</li>
+              <li><b>Forgiving.</b> Deleting a note gives you seven seconds to undo. Import merges a backup by id, and the newest edit wins.</li>
+              <li><b>Save selection.</b> A right-click entry stores selected page text with its address. Notes stay in <code>chrome.storage.local</code>.</li>
+            </ul>
+          </details>
           <div class="links"><a href="https://github.com/nyxashu25/notepad-extension" rel="noopener">source ↗</a></div>
         </article>
         <article class="card">
           <h3>excel-merger</h3>
+          <p class="meta">Python 3.9+ · 42 tests · one dependency</p>
           <p>Python CLI and library that merges Excel and CSV files, aligning columns by header name.</p>
           <span class="tag">Python</span><span class="tag">openpyxl</span>
+          <details class="more">
+            <summary>details</summary>
+            <ul>
+              <li><b>Matches columns by name,</b> ignoring case, so files whose columns are reordered or have extras still line up.</li>
+              <li><b>Streams in two passes</b> so memory stays flat: about 3,000 rows a second to .xlsx and 6,000 to .csv for a 14-column file.</li>
+              <li><b>Safe by default.</b> It never modifies inputs, builds the output in a temporary file, refuses to overwrite, skips its own earlier output, and keeps text that starts with "=" as text.</li>
+            </ul>
+          </details>
           <div class="links"><a href="https://github.com/nyxashu25/excel-merger" rel="noopener">source ↗</a></div>
         </article>
         <article class="card">
           <h3>seo-audit</h3>
+          <p class="meta">Python 3.9+ · 75 tests · standard library only</p>
           <p>Crawls a site and reports technical SEO problems: titles, canonicals, broken links, redirect chains and security headers.</p>
           <span class="tag">Python</span><span class="tag">CLI</span>
+          <details class="more">
+            <summary>details</summary>
+            <ul>
+              <li><b>39 distinct checks</b> across titles, descriptions, headings, canonicals, links, redirects, performance and security headers.</li>
+              <li><b>A polite crawler.</b> One host, obeys robots.txt, waits between requests, caps response size, and checks files with HEAD instead of downloading them.</li>
+              <li><b>Built for CI.</b> Text, Markdown and JSON reports, with exit codes you can gate a deployment on.</li>
+              <li><b>Tested against ground truth.</b> The tests crawl a local fake site with one planted defect per page, so every check is verified without touching the internet.</li>
+            </ul>
+          </details>
           <div class="links"><a href="https://github.com/nyxashu25/seo-audit" rel="noopener">source ↗</a></div>
         </article>
         <article class="card">
           <h3>redirect-mapper</h3>
+          <p class="meta">Python 3.9+ · 59 tests · standard library only</p>
           <p>Checks a 301 redirect map for loops, chains and conflicts, then exports Apache, nginx or Netlify rules.</p>
           <span class="tag">Python</span><span class="tag">CLI</span>
+          <details class="more">
+            <summary>details</summary>
+            <ul>
+              <li><b>Finds what breaks a migration:</b> loops (including pages that lead into one), self-redirects and conflicting duplicates, each reported with its line number.</li>
+              <li><b>Flattens chains</b> to one hop, and keeps the result temporary if any hop was, so a browser never caches a temporary move as permanent.</li>
+              <li><b>Escapes per format.</b> Regex characters in Apache patterns, quotes in config strings, and a literal $ is never allowed to become a backreference.</li>
+            </ul>
+          </details>
           <div class="links"><a href="https://github.com/nyxashu25/redirect-mapper" rel="noopener">source ↗</a></div>
         </article>
       </div>
 
-      <h2 style="margin-top:48px">WordPress client work</h2>
-      <p class="lede">20+ production builds across real estate, finance, healthcare and automotive. A selection:</p>
+      <h3 class="sub">WordPress client work</h3>
+      <p class="lede">20+ production builds across real estate, finance, healthcare and automotive. Key projects first:</p>
+      <div class="grid g2">
+        <article class="card proj-card">
+          <p class="proj-role">Full-stack development</p>
+          <h3><a href="https://zfinity.in" rel="noopener">Zfinity ↗</a></h3>
+          <p>zfinity.in: built end to end, frontend and backend.</p>
+        </article>
+        <article class="card proj-card">
+          <p class="proj-role">Security-focused implementation</p>
+          <h3><a href="https://securentity.com" rel="noopener">Securentity ↗</a></h3>
+          <p>securentity.com: implementation with security as the priority.</p>
+        </article>
+        <article class="card proj-card">
+          <p class="proj-role">End-to-end development</p>
+          <h3>Encrypted Training</h3>
+          <p>encrypted.training: end-to-end development of the site.</p>
+        </article>
+        <article class="card proj-card">
+          <p class="proj-role">Frontend and backend enhancements</p>
+          <h3>AV Infotech Hub</h3>
+          <p>avinfotechub.com: improvements across both layers of an existing site.</p>
+        </article>
+      </div>
+      <p class="lede" style="margin-top:22px">More sites I have worked on:</p>
       <div class="sites">
-        <a class="site" href="https://zfinity.in" rel="noopener">Zfinity ↗</a>
-        <a class="site" href="https://securentity.com" rel="noopener">Securentity ↗</a>
-        <span class="site">Encrypted Training</span>
-        <span class="site">AV Infotech Hub</span>
         <a class="site" href="https://skyline.sa" rel="noopener">Skyline Saudi Arabia ↗</a>
         <span class="site">Cross Digital</span>
         <span class="site">PetPulse Dubai</span>
@@ -365,23 +574,57 @@ footer { border-top: 1px solid var(--border); padding: 22px 0 36px; color: var(-
     </div>
   </section>
 
+  <section id="engineering" class="reveal">
+    <div class="wrap">
+      <p class="eyebrow">cat PRACTICES.md</p>
+      <h2>How I build</h2>
+      <p class="lede">The habits behind the projects above. The numbers are counted from the repositories, and every claim links to something you can inspect.</p>
+      <div class="metrics">
+        <div class="metric"><b>361</b><span>automated tests across 7 open-source tools</span></div>
+        <div class="metric"><b>6 of 7</b><span>tools with zero runtime dependencies</span></div>
+        <div class="metric"><b>PHP 7.4 to 8.4</b><span>plugin tests run on four PHP versions in CI</span></div>
+        <div class="metric"><b>Linux + Windows</b><span>Python tools tested on 3.9, 3.12 and 3.13</span></div>
+      </div>
+      <div class="grid g2">
+        <div class="card principle"><h3><i>01</i> Keep logic apart from the framework</h3><p>Decisions live in plain classes and functions that know nothing about WordPress or the browser, with a thin layer on top. That is what lets the plugins' rules be tested directly instead of by clicking around.</p></div>
+        <div class="card principle"><h3><i>02</i> Break it on purpose</h3><p>For the security rules I deliberately introduce bugs, such as letting a header contain a line break, and check that the tests fail. In one case a mutant survived, which showed a missing test, so I added it.</p></div>
+        <div class="card principle"><h3><i>03</i> Safe defaults, honest limits</h3><p>Options that can break integrations start off. Hashes instead of raw IP addresses. Output escaped, spreadsheet formulas neutralized. Each README states what the tool does not do and what was and was not tested.</p></div>
+        <div class="card principle"><h3><i>04</i> Prove it in CI</h3><p>Every repository runs its tests on GitHub Actions across language versions. DataPit's pipeline adds secret scanning, dependency audits and container image scans.</p></div>
+        <div class="card principle"><h3><i>05</i> Use my own tools</h3><p>This site is audited with <a href="https://github.com/nyxashu25/seo-audit" rel="noopener">seo-audit</a>, and it ships with a sitemap, robots.txt, structured data, a social preview image and a custom 404 page.</p></div>
+        <div class="card principle"><h3><i>06</i> Write it down</h3><p>Install steps, usage, option tables, design decisions and known limitations, in every README. If something was not verified, it says so.</p></div>
+      </div>
+    </div>
+  </section>
+
   <section id="contact" class="contact reveal">
     <div class="wrap">
       <p class="eyebrow">echo contact</p>
       <h2>Let's build something</h2>
-      <p class="lede" style="margin-inline:auto">Looking for a WordPress or PHP developer, or want to talk performance and data tooling? I'd like to hear about it.</p>
+      <p class="lede" style="margin-inline:auto">Looking for a WordPress or PHP developer, or want to talk performance, SEO or data tooling? I'd like to hear about it.</p>
       <div class="cta">
         <a class="btn primary" id="mail" href="#contact" data-u="bXJhc2h1dG9zaHJhanB1dDJAZ21haWwuY29t">Email me</a>
         <a class="btn" href="https://linkedin.com/in/nyxashu" rel="me noopener">LinkedIn</a>
         <a class="btn" href="https://github.com/nyxashu25" rel="me noopener">GitHub</a>
       </div>
       <noscript><p class="lede" style="margin-inline:auto">Enable JavaScript to reveal the email link, or reach me on LinkedIn.</p></noscript>
+      <div class="facts">
+        <div class="fact"><h3>A good fit</h3><p>WordPress and PHP builds, custom plugins, WooCommerce, API integrations.</p></div>
+        <div class="fact"><h3>Also</h3><p>Performance, technical SEO audits, redirect and migration planning, security hardening.</p></div>
+        <div class="fact"><h3>Where and when</h3><p>Dubai, UAE (UTC+4). Working language: English.</p></div>
+      </div>
+      <p class="links-row">
+        <a href="https://github.com/nyxashu25?tab=repositories" rel="noopener">all repositories ↗</a>
+        <a href="https://github.com/nyxashu25/nyxashu25.github.io" rel="noopener">source of this site ↗</a>
+      </p>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="wrap">© <span id="yr">2026</span> Ashutosh Singh · Dubai, UAE</div>
+  <div class="wrap">
+  <div>© <span id="yr">2026</span> Ashutosh Singh · Dubai, UAE</div>
+  <div>Plain HTML and CSS. No cookies, no analytics, no third-party scripts. <a href="https://github.com/nyxashu25/nyxashu25.github.io" rel="noopener">View the source</a>.</div>
+</div>
 </footer>
 
 <script>
@@ -400,6 +643,11 @@ footer { border-top: 1px solid var(--border); padding: 22px 0 36px; color: var(-
   mail.addEventListener('click', function (ev) {
     reveal();
     if (mail.getAttribute('href').indexOf('mailto:') !== 0) ev.preventDefault();
+  });
+
+  // Print with every project's details expanded.
+  window.addEventListener('beforeprint', function () {
+    document.querySelectorAll('details.more').forEach(function (d) { d.open = true; });
   });
 
   // Reveal sections as they scroll into view.
